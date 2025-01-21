@@ -35,7 +35,7 @@ func (f Field) Inv(x uint16) uint16 {
 	return uint16(inv(uint64(f), uint64(x)))
 }
 
-// Default is the least weird irreducible polynomial of degree 16.
+// Default is the least weight irreducible polynomial of degree 16.
 const Default Field = 0x1002b
 
 // Add returns x + y in the default field.
